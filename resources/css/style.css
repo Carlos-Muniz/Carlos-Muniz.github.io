@@ -1,6 +1,72 @@
-h1 {
-  font-family: Helvetica;
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
+* {
+  outline: red solid 1px;
 }
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  max-width: 60rem;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+#links {
+  display: inline-flex;
+  width: 25rem;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+#about {
+  display: flex;
+}
+
+#about-text {
+  display: block;
+  width: 70%;
+}
+
+#headshot {
+  display: block;
+  width: 30%;
+}
+
+#headshot img {
+  width: 100%;
+  height: auto;
+  border-radius: 15%;
+}
+

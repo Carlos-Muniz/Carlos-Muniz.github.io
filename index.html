@@ -1,18 +1,24 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Carlos M. Muniz</title>
+  <meta name="description" content="A simple webpage to share portfolio, interests, and contact information">
+  <meta name="author" content="SitePoint">
+
   <link href="./resources/css/reset.css" rel="stylesheet" />
   <link href="./resources/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-
   <!-- Header Section -->
   <header>
     <h1>Carlos M. Muniz</h1>
     <nav>
-      <ul>
+      <ul id="links">
         <li><a href="#about">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#interests">Interests</a></li>
@@ -23,15 +29,17 @@
 
   <!-- Main Section -->
   <main>
-
     <!-- About Section -->
     <section id="about">
-      <h2>About Me</h2>
-      <div>
+      <div id="about-text">
+        <h2>About Me</h2>
         <p>Hi! I'm Carlos, a Software Engineer.</p>
-        <p>I have a Master of Science in Computer Science from Rutgers University.</p>
+        <p>
+          I have a Master of Science in Computer Science from Rutgers
+          University.
+        </p>
       </div>
-      <figure>
+      <figure id="headshot">
         <img src="./resources/images/headshot.jpg" />
       </figure>
     </section>
@@ -41,10 +49,13 @@
       <h2>Projects</h2>
       <div>
         <h3>Halloween Club webpage</h3>
-        <p>This project was assigned by the Codecademy Fullstack Engineer Career Path Course. The purpose of the project
-          was to build a responsive group page for a fictional social club. This webpage is mobile friendly, responsive
-          to page resizing, and can be
-          seen <a href="https://carlos-muniz.github.io/halloween-club/" target="_blank">here</a>.</p>
+        <p>
+          This project was assigned by the Codecademy Fullstack Engineer
+          Career Path Course. The purpose of the project was to build a
+          responsive group page for a fictional social club. This webpage is
+          mobile friendly, responsive to page resizing, and can be seen
+          <a href="https://carlos-muniz.github.io/halloween-club/" target="_blank">here</a>.
+        </p>
       </div>
     </section>
 
@@ -52,19 +63,29 @@
     <section id="interests">
       <h2>Interests</h2>
       <div>
-        <p>My main professional interests are in technologies for Education. I believe that education is extremely
-          important, and opportunities to learn should be plentiful and inexpensive. I also believe that technology can
-          be used to bring a higher quality of education to anyone that may want it.</p>
-        <p>My technical interests are in Free & Open Source Software. While I understand the need for proprietary
-          software, I believe that sharing source code is beneficial to a free and competitive economy. I am a big fan
-          of Linux and other open source technologies.</p>
-        <p>My personal interests are in PC Gaming and Exercise. You can see what games I've been playing <a
-            href="https://steamcommunity.com/profiles/76561198117472740/" target="_blank">here</a> and my latest workout
-          plan <a href="https://www.onnit.com/academy/climbing-the-hill-the-ultimate-calisthenics-transformation/"
-            target="_blank">here</a>.</p>
+        <p>
+          My main professional interests are in technologies for Education. I
+          believe that education is extremely important, and opportunities to
+          learn should be plentiful and inexpensive. I also believe that
+          technology can be used to bring a higher quality of education to
+          anyone that may want it.
+        </p>
+        <p>
+          My technical interests are in Free & Open Source Software. While I
+          understand the need for proprietary software, I believe that sharing
+          source code is beneficial to a free and competitive economy. I am a
+          big fan of Linux and other open source technologies.
+        </p>
+        <p>
+          My personal interests are in PC Gaming and Exercise. You can see
+          what games I've been playing
+          <a href="https://steamcommunity.com/profiles/76561198117472740/" target="_blank">here</a>
+          and my latest workout plan
+          <a href="https://www.onnit.com/academy/climbing-the-hill-the-ultimate-calisthenics-transformation/"
+            target="_blank">here</a>.
+        </p>
       </div>
     </section>
-
   </main>
 
   <!-- Footer Section -->
@@ -72,3 +93,5 @@
     <h4>Last updated 2021/11/02</h4>
   </footer>
 </body>
+
+</html>
