@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: red solid 1px;
-}
+} */
 
 html {
   font-size: 16px;
@@ -12,6 +12,7 @@ body {
   display: flex;
   max-width: 60rem;
   flex-direction: column;
+  min-height: 100%;
 }
 
 h1 {
@@ -26,8 +27,12 @@ h3 {
   font-size: 1.5rem;
 }
 
-h4 {
-  font-size: 1.25rem;
+p {
+  line-height: 1.2rem;
+}
+
+a {
+  text-decoration: underline;
 }
 
 header {
@@ -43,7 +48,10 @@ header {
   width: 25rem;
   justify-content: space-between;
   font-size: 1.5rem;
-  text-decoration: underline;
+}
+
+#links a {
+  text-decoration: none;
 }
 
 section {
@@ -55,13 +63,16 @@ section {
 }
 
 #about-text {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 70%;
+  justify-content: space-between;
 }
 
 #headshot {
-  display: block;
+  display: flex;
   width: 30%;
+  justify-content: center;
 }
 
 #headshot img {
@@ -70,3 +81,40 @@ section {
   border-radius: 15%;
 }
 
+#projects {
+width: 100%;
+}
+
+.project-container{
+  padding: 0.75rem 0;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+}
+
+.project figure {
+  width: 30%;
+  padding-right: 1rem;
+}
+.project p {
+  width: 50%;
+  margin: auto 0;
+}
+.project img {
+  width: 100%;
+}
+
+#interests {
+  width: 70%;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+}

@@ -106,13 +106,6 @@ blockquote,
 q {
   quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  display: none;
-}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -139,51 +132,8 @@ select {
   line-height: inherit;
   vertical-align: baseline;
 }
-::placeholder {
-  opacity: 1;
-  color: inherit;
-  font-style: inherit;
-  font-variant: inherit;
-  font-weight: inherit;
-  font-stretch: inherit;
-  font-size: inherit;
-  font-family: inherit;
-}
-a:link {
-  text-decoration: none;
-}
-a:link,
-a:visited,
-a:hover,
-a:active {
-  color: inherit;
-}
-::-webkit-inner-spin-button {
-  appearance: none;
-}
-::-webkit-outer-spin-button {
-  appearance: none;
-}
-::-webkit-search-cancel-button {
-  appearance: none;
-}
-::-webkit-search-results-button {
-  appearance: none;
-}
-::-ms-clear,
-::-ms-reveal {
-  display: none;
-}
-::-webkit-contacts-auto-fill-button {
-  display: none;
-}
 input {
   -moz-appearance: textfield;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
 }
 html {
   box-sizing: border-box;
