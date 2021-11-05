@@ -5,6 +5,7 @@
 html {
   font-size: 16px;
   height: 100%;
+  font-family: Helvetica, Arial sans-serif;
 }
 
 body {
@@ -17,17 +18,14 @@ body {
 
 h1 {
   font-size: 2.25rem;
+  font-family: "Times New Roman", Times, serif;
 }
 
 h2 {
-  font-size: 1.9rem;
+  font-size: 1.75rem;
 }
 
 h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
   font-size: 1.25rem;
 }
 
@@ -56,6 +54,7 @@ header {
 
 #links a {
   text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
 }
 
 #contact-links {
@@ -67,6 +66,7 @@ header {
 
 #contact-links a {
   text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
 }
 
 section {
@@ -104,13 +104,44 @@ width: 100%;
   padding: 0.75rem 0;
 }
 
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.25rem;
+  padding: 0.5rem 0;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.collapsible:after {
+  content: '\02795';
+  opacity: 60%;
+  font-size: 1.25rem;
+  color: white;
+  float: right;
+}
+
+.active:after {
+  content: "\2796";
+}
+
 .project {
-  display: flex;
+  display: none;
   flex-direction: row;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 0 18px;
 }
 
 .project figure {
-  width: 30%;
+  width: 50%;
   padding-right: 1rem;
 }
 .project p {
@@ -122,8 +153,8 @@ width: 100%;
 }
 
 #interests {
-  width: 70%;
-  height: 14rem;
+  width: 80%;
+  height: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -132,6 +163,8 @@ width: 100%;
 footer {
   margin-top: auto;
   text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.75rem;
 }
 
 #contact {
