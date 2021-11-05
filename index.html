@@ -19,9 +19,9 @@
     <h1>Carlos M. Muniz</h1>
     <nav>
       <ul id="links">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#interests">Interests</a></li>
+        <li class="hide"><a href="#about">About Me</a></li>
+        <li class="hide"><a href="#projects">Projects</a></li>
+        <li class="hide"><a href="#interests">Interests</a></li>
         <li><a href="./html/contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -34,18 +34,19 @@
       <div id="about-text">
         <h2>About Me</h2>
         <p>Hi! I'm Carlos, a Software Engineer.</p>
-        <p>
+        <p class="hide">
           I studied Physics (B.S.) and Mathematics (B.A.) at the University of Florida, and took some Computer Science
           courses as electives. After taking these courses I became interested in STEM Education, and in my final year
           at UF, I researched the Help-Seeking Behavior in Educational Video Games. In 2020, I graduated from Rutgers
           University with a Master of Science in Computer Science.
         </p>
-        <p>
+        <p class="hide">
           With the M.S. and 3 years of research experience, I took a position as a Software Engineer at Systems &
           Technology Research that would allow me to get my bearings outside of Academia. After learning much and
           working with terrific scientists and engineers, I left that position to once again pursue my technical and
           professional interests in my current position as an Open Source Software Engineer for edX.
         </p>
+        <p class="show">I currently work as an Open Source Software Engineer for edX</p>
       </div>
       <figure id="headshot">
         <img src="./resources/images/headshot.jpg" />
@@ -120,22 +121,22 @@
     </section>
 
     <!-- Interests Section -->
-    <section id="interests">
-      <h2>Interests</h2>
-      <p>
+    <section id="interests" class="hide">
+      <h2 class="hide">Interests</h2>
+      <p class="hide">
         My professional interests are in technologies for education. I
         believe that education is extremely important, and opportunities to
         learn should be plentiful and inexpensive. I also believe that
         technology can be used to bring higher quality education to
         anyone that may want it.
       </p>
-      <p>
+      <p class="hide">
         My technical interests are in Free & Open Source Software. While I
         understand the need for proprietary software, I believe that sharing
         source code is beneficial to a free and competitive economy. I am a
         big fan and user of Linux, VLC Media Player, and Bitwarden.
       </p>
-      <p>
+      <p class="hide">
         My personal interests are in Tinkering, PC Gaming and Exercise. I'm currently tinkering with a Raspberry Pi 3B+.
         You can see what games I've been playing
         <a href="https://steamcommunity.com/profiles/76561198117472740/" target="_blank">here</a>

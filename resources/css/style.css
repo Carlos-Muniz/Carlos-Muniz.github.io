@@ -11,9 +11,10 @@ html {
 body {
   margin: 0 auto;
   display: flex;
-  max-width: 60rem;
+  max-width: 62rem;
   flex-direction: column;
   min-height: 100%;
+  padding: 0 1rem;
 }
 
 h1 {
@@ -92,7 +93,6 @@ section {
 
 #headshot img {
   width: 100%;
-  height: auto;
   border-radius: 15%;
 }
 
@@ -153,8 +153,8 @@ width: 100%;
 }
 
 #interests {
-  width: 80%;
-  height: 15rem;
+  width: 100%;
+  height: 12rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -178,4 +178,55 @@ justify-content: space-between;
   width: 20%;
   display: inline-flex;
   justify-content: space-between;
+}
+
+.show {
+  display: none;
+}
+
+@media only screen and (max-width: 62rem) {
+  #headshot img {
+    display: none;
+  }
+  #headshot {
+    display: none;
+  }
+  #about-text {
+    width: 100%;
+    height: 14rem;
+  }
+
+  #interests {
+    height: 14rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hide {
+    display: none;
+  }
+
+  #links {
+    width: auto;
+  }
+
+  #contact-links {
+    width: auto;
+  }
+
+  #about-text {
+    height: 8rem;
+  }
+  
+  .show {
+    display: flex;
+  }
+
+  #interests {
+    display: none;
+  }
+  
+  #icons {
+    width: 50%;
+  }
 }
